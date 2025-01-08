@@ -1,0 +1,33 @@
+@use '../variables' as v;
+
+nav {
+  transition: all 400ms;
+  z-index: 1;
+}
+
+.dark {
+  background-color: v.$dark;
+}
+
+
+.light {
+  background-color: v.$white;
+}
+
+.active {
+  border-bottom: 5px solid;
+  border-image-slice: 1;
+}
+
+li {
+  transition: v.$transition;
+
+  &:hover {
+    transform: translateY(-3px);
+    transition: v.$transition;
+  }
+}
+
+.link:hover {
+  color: unset;
+}

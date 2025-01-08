@@ -1,0 +1,30 @@
+@use '../variables.scss' as v;
+
+footer {
+  color: v.$dark;
+}
+
+.dark {
+  background-color: v.$dark;
+  color: v.$white;
+  transition: all 400ms;
+
+  a, i, li {
+    color: v.$white;
+    transition: color 400ms;
+  }
+
+  a:visited {
+    color: v.$white;
+  }
+
+  footer {
+    color: v.$white;
+  }
+}
+
+.light {
+  background-color: v.$white;
+  color: v.$dark;
+  transition: all 400ms;
+}
