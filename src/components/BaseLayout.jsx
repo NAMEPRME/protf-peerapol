@@ -6,7 +6,7 @@ import { Box, Grid2 } from "@mui/material";
 import MultiPageRoutes from './MultiPageRoutes';
 import { singlePage } from '../info/Info';
 import SinglePageRoutes from './SinglePageRoutes';
-import useScrollObserver from './hooks/useScrollObserver';
+import useScrollObserver from '../hooks/useScrollObserver';
 
 export default function BaseLayout() {
    const location = useLocation()

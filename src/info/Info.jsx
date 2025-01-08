@@ -23,7 +23,7 @@ of what each of the values mean.
 export const info = {
     firstName: "Peerapol",
     lastName: "Rohitrasmee",
-    initials: "js", // the example uses first and last, but feel free to use three or more if you like.
+    initials: "NAMEPRME", // the example uses first and last, but feel free to use three or more if you like.
     position: "a Full Stack Developer",
     selfPortrait: self, // don't change this unless you want to name your self-portrait in the "img" folder something else!
     gradient: `-webkit-linear-gradient(135deg, ${colors})`, // don't change this either
@@ -31,15 +31,15 @@ export const info = {
     miniBio: [ // these are just some "tidbits" about yourself. You can look at mine https://paytonjewell.github.io/#/ for an example if you'd like
         {
             emoji: '☕',
-            text: 'fueled by coffee'
+            text: 'Coffee lover'
         },
         {
             emoji: '🌎',
-            text: 'based in the US'
+            text: 'based in the Si Racha, Thailand'
         },
         {
-            emoji: "💼",
-            text: "Systems Engineer at Google"
+            emoji: "👨🏻‍🎓",
+            text: 'Software Engineering, Burapha University'
         },
         {
             emoji: "📧",
@@ -79,14 +79,14 @@ export const info = {
     bio: "Hello! I'm John. I'm a systems engineer for Google. I studied CompSci at Harvard, I enjoy long walks on the beach, and I believe artificial intelligence will inevitably rule us all one day. You should hire me!",
     skills:
         {
-            proficientWith: ['javascript', 'react', 'git', 'github', 'bootstrap', 'html5', 'css3', 'figma'],
+            proficientWith: ['javascript', 'react', 'git', 'github', 'figma'],
             exposedTo: ['nodejs', 'python', 'adobe illustrator']
         }
     ,
     hobbies: [
         {
-            label: 'reading',
-            emoji: '📖'
+            label: 'Gammer',
+            emoji: '🎮'
         },
         {
             label: 'theater',
@@ -96,10 +96,6 @@ export const info = {
             label: 'movies',
             emoji: '🎥'
         },
-        {
-            label: 'cooking',
-            emoji: '🌶'
-        }
 // Same as above, change the emojis to match / relate to your hobbies or interests.
 // You can also remove the emojis if you'd like, I just think they look cute :P
     ],
