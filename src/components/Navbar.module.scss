@@ -22,7 +22,7 @@ nav {
 li {
   transition: v.$transition;
   list-style-type: none;
-  text-decoration: none;
+  text-decoration: none !important;;
   &:hover {
     transform: translateY(-3px);
     transition: v.$transition;
