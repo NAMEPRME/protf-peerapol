@@ -10,6 +10,7 @@ footer {
   transition: all 400ms;
 
   a, i, li {
+    text-decoration: none;
     list-style-type: none;
     color: v.$white;
     transition: color 400ms;
