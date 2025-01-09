@@ -8,6 +8,8 @@ import MultiPageRoutes from './MultiPageRoutes';
 import { singlePage } from '../info/Info';
 import SinglePageRoutes from './SinglePageRoutes';
 import useScrollObserver from '../hooks/useScrollObserver';
+import SocialIcon from "./home/SocialIcon";
+import {info} from "../info/Info";
 
 export default function BaseLayout() {
    const location = useLocation()
@@ -48,11 +50,12 @@ export default function BaseLayout() {
                {singlePage ? <SinglePageRoutes refs={{refHome, refAbout, refPortfolio}}/> : <MultiPageRoutes />}
             </Grid2>
             <Grid2 item="">
-               {/* <Box component={'footer'} display={'flex'} flexDirection={'column'} alignItems={'center'}
+               <Box component={'footer'} display={'flex'} flexDirection={'column'} alignItems={'center'}
                   py={'1.5rem'} sx={{ opacity: 0.7 }} width={'100%'}>
-                  <p>template created with &hearts; by <a href={'https://paytonpierce.dev'}>Payton Pierce</a></p>
-                  <p>&copy; 2023</p>
-               </Box> */}
+                  {info.socials.map((social, index) => (
+                     <SocialIcon key={index} link={social.link} icon={social.icon} label={social.label} />
+                  ))}
+               </Box>
             </Grid2>
          </Grid2>
       </Box>
